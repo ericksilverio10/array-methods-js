@@ -1,5 +1,5 @@
 const data = [
-    {name: "Matheus", age: 18, sallary: 1300, driverLicense: true},
+    {name: "Matheus", age: 18, sallary: 1100, driverLicense: true},
     {name: "Erick", age: 18, sallary: 5800, driverLicense: false},
     {name: "Cesar", age: 19, sallary: 3300, driverLicense: false},
     {name: "Vinicius", age: 30, sallary: 6000, driverLicense: true},
@@ -78,3 +78,13 @@ let someoneWithNewsletterTrue = data.some((user) => user.newsLetter);
 console.log(someoneWithNewsletterTrue);
 
 // 10 - Every
+
+const everyUserHasName = data.every((user) => user.name);
+
+console.log(everyUserHasName);
+
+const minimunSallary = 1200;
+
+const everyUserHasMinimumSallary = data.every((user) => user.sallary > minimunSallary);
+
+console.log(everyUserHasMinimumSallary)
