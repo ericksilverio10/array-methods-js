@@ -65,3 +65,16 @@ const showUserName = (users) => {
     })
 }
 showUserName(data);
+
+// 9 - Some
+let someoneWithNewsletter = data.some((user) => user.newsLetter);
+
+console.log(someoneWithNewsletter);
+
+data[0].newsLetter = true;
+
+let someoneWithNewsletterTrue = data.some((user) => user.newsLetter);
+
+console.log(someoneWithNewsletterTrue);
+
+// 10 - Every
