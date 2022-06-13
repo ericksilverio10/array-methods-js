@@ -40,3 +40,7 @@ console.log(hasFour);
 
 console.log(hasSix);
 // false
+
+// 5 - Map
+data.map((user) => user.newsLetter = false);
+console.log(data);
