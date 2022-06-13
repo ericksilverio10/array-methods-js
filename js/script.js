@@ -44,3 +44,24 @@ console.log(hasSix);
 // 5 - Map
 data.map((user) => user.newsLetter = false);
 console.log(data);
+
+// 6 - Filter
+const drivers = data.filter((user) => user.driverLicense);
+console.log(drivers);
+
+// 7 - Reduce
+const sallariesSum = data.reduce(
+    (totalSallary, user) => 
+    (totalSallary += user.sallary), 
+    0);
+
+console.log(sallariesSum);
+
+// 8 - Foreach
+
+const showUserName = (users) => {
+    users.forEach((user) => {
+        console.log(`Olá ${user.name}`);
+    })
+}
+showUserName(data);
